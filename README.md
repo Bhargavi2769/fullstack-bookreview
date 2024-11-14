@@ -41,8 +41,8 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/Bhargavi2769/Book-review-app.git
-cd book-review-app
+git https://github.com/Bhargavi2769/fullstack-bookreview.git
+cd fullstack-bookreview
 Install dependencies for the backend (Node.js, Express):
 
 bash
@@ -84,7 +84,7 @@ bash
 Copy code
 cd frontend
 npm start
-This will start both the frontend React app and the backend Express server. The frontend will typically run on http://localhost:3000, and the backend API will be running on http://localhost:5000.
+This will start both the frontend React app and the backend Express server. The frontend will typically run on http://localhost:3000, and the backend API will be running on https://book-review-backend-9pyt.onrender.com.
 
 Running the App
 Open http://localhost:3000 in your browser to interact with the frontend of the Book Review App.
