@@ -1,0 +1,64 @@
+/* Container for the form to center it on the page */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f8ff; /* Light background color */
+}
+
+/* Styling for the form itself */
+.review-form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a floating effect */
+  max-width: 400px; /* Set a max width to prevent it from stretching too wide */
+  width: 100%; /* Ensure the form width is responsive */
+}
+
+/* Styling for each form input and textarea */
+.form-input,
+.form-textarea {
+  width: 100%; /* Make the inputs and textarea full width */
+  margin-bottom: 15px; /* Add space between elements */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* Styling for the textarea */
+.form-textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+  height: 100px; /* Set a fixed height for the textarea */
+}
+
+/* Styling for the submit button */
+.form-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Hover effect for the submit button */
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .review-form {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+  .form-input,
+  .form-textarea,
+  .form-button {
+    font-size: 14px; /* Slightly smaller text for mobile */
+  }
+}

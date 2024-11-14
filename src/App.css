@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar styling */
+.navbar {
+  background-color: hsla(31, 86%, 51%, 0.318); /* Background color of the navbar */
+  padding: 15px 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; 
+  justify-content: center;   /* Center vertically */
+  width: 100%;              /* Ensures navbar spans full width */
+  height: 60px;             /* Ensure navbar has sufficient height for centering */
+  box-sizing: border-box;   /* Ensure padding doesn't affect total width */
+  
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-heading {
+  color: black; /* Heading color */
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+/* Mobile responsiveness for the navbar */
+@media (max-width: 768px) {
+  .navbar-heading {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    
   }
 }
